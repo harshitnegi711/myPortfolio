@@ -26,7 +26,11 @@ const HeroSection = () => {
       </p>
 
       <div className="hero-buttons">
-        <button className="view-my-work-btn">
+        <button className="view-my-work-btn"
+          onClick={() =>
+            document.getElementById("skill").scrollIntoView({ behavior: "smooth" })
+          }
+        >
           <span>View My Work</span>
           <FaArrowDown />
         </button>
