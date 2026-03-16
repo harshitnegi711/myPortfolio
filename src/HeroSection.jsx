@@ -1,9 +1,13 @@
+
+import { LuFileText } from "react-icons/lu";
+import { FaArrowDown } from "react-icons/fa6";
+
 const HeroSection = () => {
 
   // ----------------UI BODY --------------
 
   return (
-    <div className="hero-section">
+    <div className="hero-section ">
       <div className="status">
         <span className="dot"></span>
         Available for work
@@ -23,9 +27,13 @@ const HeroSection = () => {
 
       <div className="hero-buttons">
         <button className="view-my-work-btn">
-          View My Work
+          <span>View My Work</span>
+          <FaArrowDown />
         </button>
-        <button className="resume-btn">Resume</button>
+        <button className="resume-btn">
+          <span>Resume</span>
+          <LuFileText />
+        </button>
       </div>
 
     </div>

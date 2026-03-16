@@ -2,6 +2,7 @@ body{
   padding:0;
   margin:0;
   font-family: 'Inter', sans-serif;
+  font-size:16px;
 }
 
 h1,h2,h3{
@@ -25,7 +26,8 @@ h1,h2,h3{
   position: absolute;
   width: 800px;
   height: 800px;
-background: radial-gradient(
+ pointer-events:none; 
+  background: radial-gradient(
     circle,
      rgba(99, 102, 241, 0.35),
      rgba(168, 85, 247, 0.25),
@@ -42,6 +44,7 @@ background: radial-gradient(
   position: absolute;
   width: 800px;
   height: 800px;
+ pointer-events:none; 
   background: radial-gradient(
     circle,
     rgba(59, 130, 246, 0.25),
@@ -51,7 +54,6 @@ background: radial-gradient(
   bottom: -200px;
   left: -200px;
   filter: blur(150px);
-  /* animation:move 7s  infinite alternate ease-in-out; */
   animation: floatGlow 18s ease-in-out infinite;
 }
 
@@ -70,7 +72,7 @@ background: radial-gradient(
   width:8px;
   background:#22c55e;
   border-radius:50%;
-  animation: blink 1s infinite alternate;
+  animation: blink 1.5s infinite ease-in-out;
 }
 
 .name{
@@ -84,6 +86,9 @@ background: radial-gradient(
   background: linear-gradient(90deg, #3b82f6, #60a5fa, #a855f7);
   -webkit-background-clip: text;
   color: transparent;
+}
+.rise-up-animation{
+  animation:rise-up 1s ease-out;
 }
 
 h1{
@@ -100,33 +105,83 @@ h1{
 
 .hero-buttons{
   display:flex;
-  gap:12px;
+  gap:16px;
 }
 
-.hero-buttons > button{
+.hero-buttons button{
   padding:16px 24px;
   background: rgba(255,255,255,0.07);
-  color:white;
+  color:#9ca3af;
   border:1px solid rgba(255,255,255,0.2);
   border-radius:8px;
   cursor:pointer;
+  display:flex;
+  align-items:center;
+  gap:10px;
   backdrop-filter: blur(10px);
+  transition: all 0.25s ease;
 }
 
+.hero-buttons button:hover{
+  transform: translateY(-4px);
+  background: rgba(255,255,255,0.15);
+}
 
+.hero-buttons button svg{
+  transition: transform 0.25s ease;
+}
+
+.view-my-work-btn:hover svg{
+  transform: translateY(4px);
+}
+
+.resume-btn:hover svg{
+  transform: translateX(4px);
+}
+
+/* .hero-section h1, */
+/* .hero-section h3, */
+/* .subtitle, */
+/* .status { */
+/*   animation: rise-up 0.8s ease-out; */
+/* } */
+
+.status { animation: rise-up 0.4s ease-out; }
+
+.hero-section h2 { animation: rise-up 0.6s ease-out; }
+
+.hero-section h3 { animation: rise-up 0.8s ease-out; }
+
+.hero-section h1 { animation: rise-up 1s ease-out; }
+
+.subtitle { animation: rise-up 1.2s ease-out; }
+
+.hero-buttons > button {animation:rise-up 1.4s ease-out;}
 
 /* -------------- Animations ------------------ */
 
 
 @keyframes blink {
-from {
-background:#22c55e;
-opacity:1;
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 1;
+  }
 }
-to{
-background:#9ca3af;
-opacity:0.3;
-}
+
+@keyframes rise-up {
+  0% {
+    opacity: 0;
+    transform: translateY(60px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 
@@ -146,19 +201,15 @@ opacity:0.3;
   0% {
     transform: translate(0px, 0px) scale(1);
   }
-
   25% {
     transform: translate(-120px, -80px) scale(1.1);
   }
-
   50% {
     transform: translate(-200px, -200px) scale(1.05);
   }
-
   75% {
     transform: translate(-100px, -250px) scale(1.15);
   }
-
   100% {
     transform: translate(0px, 0px) scale(1);
   }
@@ -168,15 +219,12 @@ opacity:0.3;
   0% {
     transform: translate(0px, 0px) scale(1);
   }
-
   30% {
     transform: translate(150px, 80px) scale(1.1);
   }
-
   60% {
     transform: translate(200px, 200px) scale(1.05);
   }
-
   100% {
     transform: translate(0px, 0px) scale(1);
   }
