@@ -11,7 +11,6 @@ import {
   SiPostgresql,
   SiPostman,
   SiMongodb
-  // SiVisualstudiocode
 } from "react-icons/si"
 
 const skills = [
