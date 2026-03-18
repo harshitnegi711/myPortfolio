@@ -1,4 +1,5 @@
 import { FaReact, FaNodeJs, FaGit, FaNpm } from "react-icons/fa"
+import { TbApi } from "react-icons/tb";
 import { IoLogoCss3 } from "react-icons/io";
 import { DiVim } from "react-icons/di";
 import { VscVscode } from "react-icons/vsc";
@@ -30,7 +31,7 @@ const skills = [
     items: [
       { name: "Node.js", icon: FaNodeJs },
       { name: "Express.js", icon: SiExpress },
-      { name: "REST APIs", icon: SiPostman },
+      { name: "REST APIs", icon: TbApi },
       { name: "PostgreSQL", icon: SiPostgresql },
       { name: "MongoDB", icon: SiMongodb }
     ]
