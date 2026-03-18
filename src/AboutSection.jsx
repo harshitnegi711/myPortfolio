@@ -2,7 +2,6 @@ const AboutSection = () => {
   return (
     <section className="about-section">
       <div className="about-container">
-
         <h2 className="about-title">
           About <span className="gradient-text">Me</span>
         </h2>
@@ -30,6 +29,11 @@ const AboutSection = () => {
           documentation that outlives the sprint.
         </p>
 
+      </div>
+      <div className="gif-container">
+        <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExcXc3aHhuNzFxYnNmeTB4ZDZ4dzh6ZmYyNmF6bmd5N2premFrNHVsdyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/DbXSzkKLzy96e3uukf/giphy.gif"
+          height={400} width={400}
+        />
       </div>
     </section>
   )
