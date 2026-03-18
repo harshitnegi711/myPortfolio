@@ -1,5 +1,6 @@
 import AboutSection from "./AboutSection"
 import HeroSection from "./HeroSection"
+import ProjectsSection from "./ProjectsSection"
 import SkillsSection from "./SkillsSection"
 
 
@@ -11,6 +12,7 @@ function App() {
       <HeroSection />
       <AboutSection />
       <SkillsSection />
+      <ProjectsSection />
     </>
   )
 }

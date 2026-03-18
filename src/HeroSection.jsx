@@ -28,14 +28,14 @@ const HeroSection = () => {
       <div className="hero-buttons">
         <button className="view-my-work-btn"
           onClick={() =>
-            document.getElementById("skill").scrollIntoView({ behavior: "smooth" })
+            document.getElementById("projects").scrollIntoView({ behavior: "smooth" })
           }
         >
           <span>View My Work</span>
           <FaArrowDown />
         </button>
         <button className="resume-btn">
-          <span>Resume</span>
+          <span onClick={() => { window.open("../public/harshit_negi_SDE.pdf", "_blank") }}>Resume</span>
           <LuFileText />
         </button>
       </div>
