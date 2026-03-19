@@ -34,8 +34,8 @@ const HeroSection = () => {
           <span>View My Work</span>
           <FaArrowDown />
         </button>
-        <button className="resume-btn">
-          <span onClick={() => { window.open("../public/harshit_negi_SDE.pdf", "_blank") }}>Resume</span>
+        <button className="resume-btn" onClick={() => { window.open("/harshit_negi_SDE.pdf", "_blank") }}>
+          <span >Resume</span>
           <LuFileText />
         </button>
       </div>
