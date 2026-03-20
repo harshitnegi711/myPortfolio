@@ -328,12 +328,135 @@ h1{
   filter:drop-shadow(0 0 8px rgba(96,165,250,0.7));
 }
 
+/* ---------------- Experience Section ---------------- */
+
+.experience-section{
+  min-height:100dvh;
+  padding:5% clamp(24px,10vw,200px);
+}
+
+.experience-title{
+  font-size:42px;
+  margin-bottom:40px;
+}
+
+.experience-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(400px,1fr));
+  gap:28px;
+}
+
+.experience-card{
+  background:rgba(255,255,255,0.05);
+  border:1px solid rgba(255,255,255,0.1);
+  border-radius:16px;
+  padding:24px;
+  backdrop-filter:blur(12px);
+  transition:all 0.3s ease;
+  position:relative;
+  overflow:hidden;
+}
+
+.experience-card:hover{
+  transform:translateY(-8px);
+  border-color:rgba(255,255,255,0.3);
+}
+
+.experience-card::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(
+    120deg,
+    transparent,
+    rgba(99,102,241,0.2),
+    transparent
+  );
+  pointer-events:none;
+  opacity:0;
+  transition:0.4s;
+}
+
+.experience-card:hover::before{
+  opacity:1;
+}
+
+.experience-header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:8px;
+}
+
+.experience-header h3{
+  font-size:20px;
+}
+
+.experience-duration{
+  font-size:14px;
+  color:#9ca3af;
+}
+
+.experience-role{
+  margin-bottom:16px;
+  font-weight:500;
+  color:#e5e7eb;
+}
+
+.experience-points{
+  padding-left:18px;
+}
+
+.experience-points li{
+  margin-bottom:10px;
+  color:#9ca3af;
+  line-height:1.6;
+}
+
+
 
 /* ---------------- Projects Section ---------------- */
 
 .projects-section{
   min-height:100dvh;
+  position:relative;
   padding:5% clamp(24px,10vw,200px);
+}
+
+.projects-section::before{
+  content:"";
+  position:absolute;
+  width:min(600px,60vw);
+  height:min(600px,60vw);
+  background:radial-gradient(
+    circle,
+    rgba(99,102,241,0.35),
+    rgba(168,85,247,0.25),
+    transparent 70%
+  );
+  top:-200px;
+  right:-200px;
+  filter:blur(120px);
+  pointer-events:none;
+  animation:floatGlow2 18s ease-in-out infinite;
+}
+
+.projects-section::after{
+  content:"";
+  position:absolute;
+  width:min(600px,60vw);
+  height:min(600px,60vw);
+  background:radial-gradient(
+    circle,
+    rgba(59,130,246,0.25),
+    rgba(6,182,212,0.25),
+    transparent 60%
+  );
+  bottom:-200px;
+  left:-200px;
+  filter:blur(120px);
+  pointer-events:none;
+  animation:floatGlow 18s ease-in-out infinite;
 }
 
 .projects-title{
