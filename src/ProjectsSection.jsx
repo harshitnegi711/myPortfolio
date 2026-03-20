@@ -3,6 +3,15 @@ import { FaGithub } from "react-icons/fa";
 
 
 const projects = [
+
+  {
+    title: "ChatHub",
+    description:
+      "A full-stack real-time chat application built using WebSockets, enabling seamless bidirectional communication across multiple chat interfaces. Features a responsive UI, efficient state management, and scalable backend for handling concurrent connections.",
+    tech: ["React", "Node.js", "JavaScript", "CSS", "WebSockets", "Express"],
+    live: null,
+    github: "https://github.com/harshitnegi711/ChatHub.git",
+  },
   {
     title: "Portfolio Website",
     description:
@@ -69,9 +78,12 @@ const ProjectsSection = () => {
             </div>
 
             <div className="project-links">
-              <a href={project.live} target="_blank" rel="noreferrer">
-                Live <FaLink />
-              </a>
+              {
+                project.live &&
+                <a href={project.live} target="_blank" rel="noreferrer">
+                  Live <FaLink />
+                </a>
+              }
               <a href={project.github} target="_blank" rel="noreferrer">
                 Code <FaGithub />
               </a>
