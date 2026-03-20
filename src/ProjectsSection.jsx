@@ -13,22 +13,6 @@ const projects = [
     github: "https://github.com/harshitnegi711/ChatHub.git",
   },
   {
-    title: "Portfolio Website",
-    description:
-      "A fully responsive personal portfolio website built using HTML, CSS, and JavaScript, showcasing projects, skills, and smooth UI interactions.",
-    tech: ["HTML", "CSS", "JavaScript"],
-    live: "https://test-portfolio-711.netlify.app/",
-    github: "https://github.com/harshitnegi711/portfolio-1.git",
-  },
-  {
-    title: "Product Landing Page",
-    description:
-      "A modern and responsive landing page designed with clean UI/UX principles using HTML, CSS, and JavaScript.",
-    tech: ["HTML", "CSS", "JavaScript"],
-    live: "https://landingpage711.netlify.app/",
-    github: "https://github.com/harshitnegi711/landing_page.git",
-  },
-  {
     title: "Music Player",
     description:
       "A web-based music player with play, pause, and track controls built using HTML, CSS, JavaScript, and jQuery.",
@@ -43,6 +27,22 @@ const projects = [
     tech: ["HTML", "CSS", "JavaScript"],
     live: "https://landingpagenetflex.netlify.app/",
     github: "https://github.com/harshitnegi711/netflix-clone.git",
+  },
+  {
+    title: "Portfolio Website",
+    description:
+      "A fully responsive personal portfolio website built using HTML, CSS, and JavaScript, showcasing projects, skills, and smooth UI interactions.",
+    tech: ["HTML", "CSS", "JavaScript"],
+    live: "https://test-portfolio-711.netlify.app/",
+    github: "https://github.com/harshitnegi711/portfolio-1.git",
+  },
+  {
+    title: "Product Landing Page",
+    description:
+      "A modern and responsive landing page designed with clean UI/UX principles using HTML, CSS, and JavaScript.",
+    tech: ["HTML", "CSS", "JavaScript"],
+    live: "https://landingpage711.netlify.app/",
+    github: "https://github.com/harshitnegi711/landing_page.git",
   },
   {
     title: "Simon Game",
