@@ -13,6 +13,14 @@ const projects = [
     github: "https://github.com/harshitnegi711/ChatHub.git",
   },
   {
+    title: "Auth System",
+    description:
+      "A secure full-stack authentication system built with React and Node.js, featuring JWT-based authentication and two-factor authentication (2FA) using TOTP. Implements secure login flows, OTP verification, role-based access control, password management, and protected API routes.",
+    tech: ["React", "Node.js", "JavaScript", "Express", "JWT", "TOTP", "Speakeasy", "MongoDB"],
+    live: null,
+    github: "https://github.com/harshitnegi711/auth-system.git",
+  },
+  {
     title: "Music Player",
     description:
       "A web-based music player with play, pause, and track controls built using HTML, CSS, JavaScript, and jQuery.",

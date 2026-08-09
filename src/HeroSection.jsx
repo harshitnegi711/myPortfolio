@@ -13,7 +13,7 @@ const HeroSection = () => {
         Available for work
       </div>
       <h2>
-        Hi I'm <span className="name">Harshit Negi</span>
+        Hi I'm <span className="gradient-text">Harshit Negi</span>
       </h2>
       <h1>
         I build <span className="gradient-text">scalable and high-performance</span>
@@ -34,7 +34,7 @@ const HeroSection = () => {
           <span>View My Work</span>
           <FaArrowDown />
         </button>
-        <button className="resume-btn" onClick={() => { window.open("/harshit_negi_SDE.pdf", "_blank") }}>
+        <button className="resume-btn" onClick={() => { window.open("/HarshitNegi.pdf", "_blank") }}>
           <span >Resume</span>
           <LuFileText />
         </button>
